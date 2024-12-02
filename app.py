@@ -19,15 +19,12 @@ def predict_carbon_footprint(input_data):
     return predicted_value[0]
 
 # Embed the background image using Base64
-base64_image = get_base64_of_bin_file(r'C:\Users\adity\PycharmProjects\Carbon_Footprint_Calculator\background.jpg')
 
 # Embed the external background image using CSS
 st.markdown(f"""
     <style>
         body {{
             font-family: 'Arial', sans-serif;
-            background: url("https://wallpapers.com/images/hd/environment-background-wz742ofb7mv20diy.jpg") no-repeat center center fixed;
-            background-size: cover;
         }}
         .title {{
             text-align: center;
